@@ -1,5 +1,6 @@
 package com.example.myapplication.data.remote
 
+import com.example.myapplication.data.model.ApiException
 import com.example.myapplication.data.model.NewsResponse
 import com.example.myapplication.util.API_KEY
 import com.example.myapplication.util.API_TOKEN
@@ -24,10 +25,10 @@ class ApiServiceImpl(private val client: HttpClient) : ApiService {
             if (response.status.isSuccess()){
                 emit(response.body())
             }else{
-                throw Exception("Failed to Get News")
+                throw ApiException("Failed to Get News: ${response.status}")
             }
         } catch (e: Exception) {
-            throw e
+            throw ApiException("An error occurred: ${e.message}")
         }
     }
 }
