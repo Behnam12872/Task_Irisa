@@ -27,7 +27,7 @@ class NewsViewModel(private val newsRepository: NewsRepository) : ViewModel() {
             newsRepository.getNews()
                 .onEach { result ->
                     when (result) {
-                        is DataResult.Error -> _newsState.value = ViewResult.Error(result.error)
+                        is DataResult.Error -> _newsState.value = ViewResult.Error(DataError.DATA_NOT_FOUND)
                         is DataResult.Success -> _newsState.value = ViewResult.Success(result.data)
                     }
                 }
