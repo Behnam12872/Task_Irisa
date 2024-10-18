@@ -40,7 +40,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.14"
     }
     packaging {
         resources {
@@ -66,4 +66,32 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //ktor
+    implementation(libs.ktor.client.android)
+    implementation(libs.ktor.client.cio)
+    implementation(libs.ktor.client.serialization)
+    implementation(libs.ktor.client.logging)
+    implementation(libs.ktor.client.content.negotiation)
+    implementation(libs.ktor.serialization.kotlinx.json)
+
+    //kotlin serialization
+    implementation(libs.kotlinx.serialization.json)
+
+    //Koin
+    implementation(libs.koin.core)
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.navigation)
+
+    //UI Controller
+    implementation(libs.accompanist.systemuicontroller)
+
+    //splash screen
+    implementation(libs.androidx.core.splashscreen)
+
+    //Navigation
+    implementation(libs.androidx.navigation.compose)
+    implementation (libs.accompanist.pager)
+    implementation (libs.accompanist.pager.indicators)
 }
