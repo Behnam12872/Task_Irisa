@@ -14,10 +14,3 @@ sealed class DataResult<out D, out E : RootError> {
         }
     }
 }
-
-sealed class DataError : RootError {
-    data object ApiError : DataError()
-    data object Unknown : DataError()
-}
-
-class ApiException(message: String) : Exception(message)
