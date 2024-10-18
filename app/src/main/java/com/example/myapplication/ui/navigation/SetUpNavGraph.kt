@@ -9,6 +9,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.myapplication.data.model.AppScreen
 import com.example.myapplication.ui.screen.HomeScreen
+import com.example.myapplication.ui.screen.LoginScreen
 
 
 @Composable
@@ -19,13 +20,13 @@ fun SetUpNavGraph(
     NavHost(
         modifier = Modifier.padding(innerPadding),
         navController = navController,
-        startDestination = AppScreen.HomeScreen
+        startDestination = AppScreen.LoginScreen
     ) {
         composable<AppScreen.HomeScreen> {
             HomeScreen(navController)
         }
         composable<AppScreen.LoginScreen> {
-
+            LoginScreen(navController = navController)
         }
         composable<AppScreen.SettingScreen> {
         }

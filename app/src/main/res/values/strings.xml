@@ -3,4 +3,7 @@
     <string name="profile">profile</string>
     <string name="home">home</string>
     <string name="setting">setting</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
 </resources>
