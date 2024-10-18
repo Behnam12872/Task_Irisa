@@ -10,6 +10,8 @@ import androidx.navigation.compose.composable
 import com.example.myapplication.data.model.AppScreen
 import com.example.myapplication.ui.screen.HomeScreen
 import com.example.myapplication.ui.screen.LoginScreen
+import com.example.myapplication.ui.screen.ProfileScreen
+import com.example.myapplication.ui.screen.SettingScreen
 import com.example.myapplication.ui.screen.news.NewsScreen
 
 
@@ -21,7 +23,7 @@ fun SetUpNavGraph(
     NavHost(
         modifier = Modifier.padding(innerPadding),
         navController = navController,
-        startDestination = AppScreen.NewsScreen
+        startDestination = AppScreen.HomeScreen
     ) {
         composable<AppScreen.HomeScreen> {
             HomeScreen(navController)
@@ -30,8 +32,10 @@ fun SetUpNavGraph(
             LoginScreen(navController = navController)
         }
         composable<AppScreen.SettingScreen> {
+            SettingScreen()
         }
         composable<AppScreen.ProfileScreen> {
+            ProfileScreen()
         }
         composable<AppScreen.NewsScreen> {
             NewsScreen()
