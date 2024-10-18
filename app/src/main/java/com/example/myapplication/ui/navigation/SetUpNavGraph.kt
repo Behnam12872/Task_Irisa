@@ -1,4 +1,4 @@
-package ir.example.taskirisa.ui.navigation
+package com.example.myapplication.ui.navigation
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
@@ -23,7 +23,7 @@ fun SetUpNavGraph(
     NavHost(
         modifier = Modifier.padding(innerPadding),
         navController = navController,
-        startDestination = AppScreen.HomeScreen
+        startDestination = AppScreen.LoginScreen
     ) {
         composable<AppScreen.HomeScreen> {
             HomeScreen(navController)

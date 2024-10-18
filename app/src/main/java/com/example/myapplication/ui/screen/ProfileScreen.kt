@@ -1,6 +1,5 @@
 package com.example.myapplication.ui.screen
 
-
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

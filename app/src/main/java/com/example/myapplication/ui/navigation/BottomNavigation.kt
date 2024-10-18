@@ -1,4 +1,4 @@
-package ir.example.taskirisa.ui.navigation
+package com.example.myapplication.ui.navigation
 
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Icon
