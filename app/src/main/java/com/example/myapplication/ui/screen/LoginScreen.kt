@@ -46,19 +46,17 @@ import com.example.myapplication.data.model.AppScreen
 
 @Composable
 fun LoginScreen(navController: NavController) {
-    Box {
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(White)
-        )
-        Column(
-            verticalArrangement = Arrangement.SpaceBetween,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            IconApp()
-            MainCardView(navController)
-        }
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(White)
+    )
+    Column(
+        verticalArrangement = Arrangement.SpaceBetween,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        IconApp()
+        MainCardView(navController)
     }
 }
 
@@ -73,6 +71,7 @@ fun IconApp() {
         contentDescription = null
     )
 }
+
 @Composable
 fun MainCardView(navigation: NavController) {
     var username by remember { mutableStateOf("") }
@@ -127,6 +126,7 @@ fun MainCardView(navigation: NavController) {
         }
     }
 }
+
 @Composable
 fun UsernameTextField(username: String, onUsernameChanges: (String) -> Unit) {
     OutlinedTextField(

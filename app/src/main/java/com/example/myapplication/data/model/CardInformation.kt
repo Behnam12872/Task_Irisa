@@ -8,16 +8,16 @@ data class CardInformation(
     val appScreen: AppScreen
 )
 val cardInformation= listOf(
-    CardInformation("Weather", R.drawable.ic_coin,AppScreen.NewsScreen),
-    CardInformation("Weather", R.drawable.ic_coin,AppScreen.NewsScreen),
-    CardInformation("Weather", R.drawable.ic_coin,AppScreen.NewsScreen),
-    CardInformation("Weather", R.drawable.ic_coin,AppScreen.NewsScreen),
-    CardInformation("Weather", R.drawable.ic_coin,AppScreen.NewsScreen),
-    CardInformation("Weather", R.drawable.ic_coin,AppScreen.NewsScreen),
+    CardInformation("News", R.drawable.ic_coin,AppScreen.NewsScreen),
+    CardInformation("News", R.drawable.ic_coin,AppScreen.NewsScreen),
+    CardInformation("News", R.drawable.ic_coin,AppScreen.NewsScreen),
+    CardInformation("News", R.drawable.ic_coin,AppScreen.NewsScreen),
+    CardInformation("News", R.drawable.ic_coin,AppScreen.NewsScreen),
+    CardInformation("News", R.drawable.ic_coin,AppScreen.NewsScreen),
 )
 val cardInformation2= listOf(
-    CardInformation("Weather", R.drawable.ic_coin,AppScreen.NewsScreen),
-    CardInformation("Weather", R.drawable.ic_coin,AppScreen.NewsScreen),
-    CardInformation("Weather", R.drawable.ic_coin,AppScreen.NewsScreen),
-    CardInformation("Weather", R.drawable.ic_coin,AppScreen.NewsScreen),
+    CardInformation("News", R.drawable.ic_coin,AppScreen.NewsScreen),
+    CardInformation("News", R.drawable.ic_coin,AppScreen.NewsScreen),
+    CardInformation("News", R.drawable.ic_coin,AppScreen.NewsScreen),
+    CardInformation("News", R.drawable.ic_coin,AppScreen.NewsScreen),
 )

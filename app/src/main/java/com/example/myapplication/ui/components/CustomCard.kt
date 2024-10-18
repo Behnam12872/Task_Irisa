@@ -35,6 +35,7 @@ fun CustomCard(cardInformation: CardInformation, navController: NavController, s
             modifier = Modifier.fillMaxSize()
         ) {
             Icon(
+                modifier = Modifier.size(50.dp),
                 painter = painterResource(id = cardInformation.icon),
                 contentDescription = null,
                 tint = Color.Unspecified

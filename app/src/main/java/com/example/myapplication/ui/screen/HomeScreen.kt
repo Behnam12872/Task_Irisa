@@ -30,6 +30,7 @@ import com.example.myapplication.data.model.cardInformation
 import com.example.myapplication.data.model.cardInformation2
 import com.example.myapplication.data.model.imageSlider
 import com.example.myapplication.ui.components.CustomCard
+import com.example.myapplication.ui.theme.Gray1
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.HorizontalPagerIndicator
@@ -42,7 +43,7 @@ fun HomeScreen(navController: NavHostController) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
-            .background(color = Color.LightGray)
+            .background(color = Gray1)
             .fillMaxSize()
     ) {
         ImageSlider()
@@ -58,7 +59,7 @@ fun ImageSlider() {
     val pagerState = rememberPagerState(initialPage = 0)
     Column(
         modifier = Modifier
-            .background(color = Color.LightGray)
+            .background(color = Gray1)
     ) {
         HorizontalPager(
             count = imageSlider.size,
