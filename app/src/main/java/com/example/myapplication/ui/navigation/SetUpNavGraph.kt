@@ -8,6 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.myapplication.data.model.AppScreen
+import com.example.myapplication.ui.screen.HomeScreen
 
 
 @Composable
@@ -21,8 +22,10 @@ fun SetUpNavGraph(
         startDestination = AppScreen.HomeScreen
     ) {
         composable<AppScreen.HomeScreen> {
+            HomeScreen(navController)
         }
         composable<AppScreen.LoginScreen> {
+
         }
         composable<AppScreen.SettingScreen> {
         }
